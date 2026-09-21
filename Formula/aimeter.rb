@@ -5,21 +5,21 @@
 class Aimeter < Formula
   desc "Terminal dashboard for AI provider usage and quota limits"
   homepage "https://github.com/cookiebinary1/aimeter"
-  version "0.1.0"
+  version "0.1.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/cookiebinary1/aimeter/releases/download/v0.1.0/aimeter_0.1.0_darwin_amd64.tar.gz"
-      sha256 "6e2e48fe8c1aa2603ac0c428eec36de042cf36c584ad5d56ce238281765cb133"
+      url "https://github.com/cookiebinary1/aimeter/releases/download/v0.1.1/aimeter_0.1.1_darwin_amd64.tar.gz"
+      sha256 "f1d488aff30e20d2c40c8189acd00161f3ecdd4272fe66100dd1c91719828871"
 
       define_method(:install) do
         bin.install "aimeter"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/cookiebinary1/aimeter/releases/download/v0.1.0/aimeter_0.1.0_darwin_arm64.tar.gz"
-      sha256 "1581d94de35a2138af8af66f2b2385cbc37d70b65a70c0b4bfc12ba518ff48ec"
+      url "https://github.com/cookiebinary1/aimeter/releases/download/v0.1.1/aimeter_0.1.1_darwin_arm64.tar.gz"
+      sha256 "ca4fc493a05afc649f37553ec3efb0596c204fc1131c891cf5e9e2b4d52903eb"
 
       define_method(:install) do
         bin.install "aimeter"
@@ -29,15 +29,15 @@ class Aimeter < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/cookiebinary1/aimeter/releases/download/v0.1.0/aimeter_0.1.0_linux_amd64.tar.gz"
-      sha256 "b08e97db7f3a6727cc3b740cb7f61baf877ba1a8902de1f13fb94f3858a3d5ef"
+      url "https://github.com/cookiebinary1/aimeter/releases/download/v0.1.1/aimeter_0.1.1_linux_amd64.tar.gz"
+      sha256 "2cd6f22cc7007ca724edd2a89e13ebb63703504afb9c23cc8c22a6ca64fc85e9"
       define_method(:install) do
         bin.install "aimeter"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/cookiebinary1/aimeter/releases/download/v0.1.0/aimeter_0.1.0_linux_arm64.tar.gz"
-      sha256 "1f89996a003032b787b6ee7ac267af079c2a4c94d112b84771c2b5a775227412"
+      url "https://github.com/cookiebinary1/aimeter/releases/download/v0.1.1/aimeter_0.1.1_linux_arm64.tar.gz"
+      sha256 "623a611fdba0f734bdbf91e61c90633afe98387d6284ba1846df327c7dfe267c"
       define_method(:install) do
         bin.install "aimeter"
       end
